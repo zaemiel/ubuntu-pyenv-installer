@@ -7,13 +7,21 @@ The Ubuntu Pyenv Installer is a 2-click installation script that will install on
  * The latest Python version (if needed)
  * Will set the latest Python version as the global version for the system (if needed)
 
+Tested on freshly installed:
+ * Ubuntu 18.04.6
+ * Linux Mint 20.01
+ * Ubuntu 20.04.3
+
 ## Installation / Uninstallation
 
-You need `curl` to use this script. To install it (if it's not installed already) use this command:
+You need `curl` to use this script. Linux Mint has `curl` preinstalled, but Ubuntu hasn't.
+
+To install `curl` use this command:
 
 ```bash
 sudo apt install curl
 ```
+
 
 ### Install Pyenv
 
