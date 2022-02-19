@@ -26,10 +26,10 @@ colorize 33 "What should I do?"
 
 echo "  1. Install Pyenv only"
 echo "  2. Install Pyenv, and the latest Python version ($python_version)"
-echo "  3. Install Pyenv, the latest Python ($python_version), and set it as global version"
+echo "  3. Install Pyenv, the latest Python ($python_version), and set it as the global version"
 echo
 
-read -p "Make you choice (1, 2 or 3): " answer
+read -p "Make your choice (1, 2 or 3): " answer
 echo
 
 apt_update(){
