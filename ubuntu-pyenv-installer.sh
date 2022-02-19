@@ -106,6 +106,10 @@ set_python_global(){
     pyenv global $python_version
 }
 
+restart_current_shell(){
+    exec $SHELL
+}
+
 done_message(){
     echo
 
@@ -134,15 +138,18 @@ install_minimum(){
 if [[ $answer == '1' ]]; then
     install_minimum
     done_message
+    restart_current_shell
 elif [[ $answer == '2' ]]; then
     install_minimum
     install_python
     done_message
+    restart_current_shell
 elif [[ $answer == '3' ]]; then
     install_minimum
     install_python
     set_python_global
     done_message
+    restart_current_shell
 else
     echo "Invalid input. Try again"
     exit 0
