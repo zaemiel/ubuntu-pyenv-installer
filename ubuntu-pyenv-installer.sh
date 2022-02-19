@@ -81,11 +81,9 @@ install_pyenv(){
     sed -Ei -e '/^([^#]|$)/ {a \
     export PYENV_ROOT="$HOME/.pyenv"
     a \
-    export PATH="$PYENV_ROOT/shims:$PATH"
-    a \
     export PATH="$PYENV_ROOT/bin:$PATH"
     a \
-    eval "$(pyenv init -)"
+    eval "$(pyenv init --path)"
     a \
     eval "$(pyenv virtualenv-init -)"
     a \
@@ -117,9 +115,8 @@ done_message(){
 
     colorize 93 "At the beginning of the ${HOME}/.bashrc file were added these lines:"
     echo '    export PYENV_ROOT="$HOME/.pyenv"'
-    echo '    export PATH="$PYENV_ROOT/shims:$PATH"'
     echo '    export PATH="$PYENV_ROOT/bin:$PATH"'
-    echo '    eval "$(pyenv init -)"'
+    echo '    eval "$(pyenv init --path)"'
     echo '    eval "$(pyenv virtualenv-init -)"'
     echo
 
