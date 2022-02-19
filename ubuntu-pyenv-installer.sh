@@ -39,7 +39,7 @@ apt_update(){
 }
 
 create_symlink_to_python3(){
-    ln -s /usr/bin/python3 /usr/bin/python
+    sudo ln -s /usr/bin/python3 /usr/bin/python
 }
 
 install_python_dependencies() {
