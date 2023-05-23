@@ -9,7 +9,7 @@ The Ubuntu Pyenv Installer is a 2-click installation script that will install on
 
 Tested on freshly installed:
  * Ubuntu 18.04.6
- * Linux Mint 20.01
+ * Linux Mint 20.01, 21.1
  * Ubuntu 20.04.3
 
 ## Installation / Uninstallation
