@@ -14,9 +14,8 @@ colorize 33 "Ubuntu Pyenv Installer"
 current_version=`python3 -V | grep -Eo '([0-9]{1,3}[\.]){2}[0-9]{1,3}'`
 echo "  The current Python version is: ${current_version} (system)"
 
-python_version=`curl --silent https://www.python.org/downloads/ \
-                | grep https://www.python.org/ftp/python/ \
-                | grep -Eo '([0-9]{1,3}[\.]){2}[0-9]{1,3}' \
+python_version=`curl --silent https://www.python.org/doc/versions/ \
+                | grep -oP 'Python \d+\.\d+\.\d+' \
                 | head -1`
 
 echo "  The latest Python version is: ${python_version}"
